@@ -10,7 +10,17 @@
   display: none;
 }
 
-img {
+#alive-bob {
+  text-align: center;
   width: 600px;
   height: 400px;
+}
+
+#rip-bob {
+  width:100%;
+  height:100%;
+}
+
+.col-md-8 {
+  text-align: center;
 }

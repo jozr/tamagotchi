@@ -26,6 +26,7 @@ $(document).ready(function() {
 
     $("#initial-form").hide();
     $("#bob").show();
+    $(".message-from-bob").text('"My name is Bob. Will you play with me?"');
 
     var myPet = Object.create(Tamagotchi);
     myPet.initialize();
@@ -38,10 +39,24 @@ $(document).ready(function() {
     $(".activity-level").text(" " + myPet.activityLevel);
 
       if (!myPet.isAlive()) {
+        $("#rip-bob").fadeOut(30000, function() {
+        });
         $("#dead-bob").show();
-        alert("You killed him.");
-      }
+        $("#bob").hide();
 
+        // $("#dead-bob").append('<iframe width="420" height="315" src="http://www.youtube.com/embed/VQAoI977oNI?rel=0" frameborder="0" allowfullscreen></iframe>');
+      }
     });
+
+    $(".play-btn").click(function()  {
+        $(".message-from-bob").text('"I am so sleepy now. Tuck me in?"');
+    });
+    $(".sleep-btn").click(function()  {
+        $(".message-from-bob").text('"I feel faint. Please feed me."');
+    });
+    $(".feed-btn").click(function()  {
+        $(".message-from-bob").text('"I feel like playing again!"');
+    });
+
   });
 });

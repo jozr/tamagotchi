@@ -25,18 +25,27 @@
       </div>
 
       <div id="bob">
-        <h1>Meet Bob!</h1>
-        <img src="img/bob.jpg"/>
-        <p>Congratulations! He's your new Tamagotchi. Be sure to take good care of him by checking up on his vitality frequently!</p>
-        <p>Food level:<span class="food-level"></span><br>
-           Sleep level:<span class="sleep-level"></span><br>
-           Activity level:<span class="activity-level"></span><br>
-        </p>
-          <button type="button" id="btn1">Check Up</button>
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-8">
+          <img id "alive-bob" src="img/bob.jpg"/>
+          <h1><span class="message-from-bob"></span></h1>
+          <button type="button" class="play-btn">Play with Bob</button>
+          <button type="button" class="sleep-btn">Let Bob Sleep</button>
+          <button type="button" class="feed-btn">Feed Bob</button>
+        </div>
+        <div class="col-md-2">
+          <p>Food level:<span class="food-level"></span><br>
+             Sleep level:<span class="sleep-level"></span><br>
+             Activity level:<span class="activity-level"></span><br>
+          </p>
+          <button type="button" id="btn1">See Stats</button>
+        </div>
+        <div class="col-md-1">
+        </div>
       </div>
       <div id="dead-bob">
-        <img src="img/deadBob.jpg"/>
-        <p>:O</p>
-
+        <img id="rip-bob" src="img/deadBob.jpg"/>
+      </div>
   </body>
 </html>
