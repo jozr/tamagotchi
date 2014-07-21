@@ -1,0 +1,16 @@
+#result {
+  display: none;
+}
+
+#bob  {
+  display: none;
+}
+
+#dead-bob {
+  display: none;
+}
+
+img {
+  width: 600px;
+  height: 400px;
+}
